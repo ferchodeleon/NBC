@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: verlag;
+    src: url('NBC/Fonts/BourbonGrotesque-Regular+(1).otf');
+    src: url('NBC/Fonts/DIN-Regular.otf');
+    src: url('NBC/Fonts/Gotham Rounded Book.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verlag;
+}
+
+figure {
+    margin: 0;
+    height: 145px ;
+    padding-left: 200px;
+    padding-top: 89px;
+}
+
+.inscripcion {
+    background-image: url("../NBC/NBC_separado/foto\ home1_Mesa\ de\ trabajo\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 939px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    height: inherit;
+}
+
+.container {
+    width: 10000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-content: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.menu {
+    height: inherit;
+    padding-top: 148px;
+    padding-right: 198px; 
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    padding-right: 20px;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+a{
+    padding: 0 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.button-inscribete{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.button-inscribete input{
+    padding: 16px 45px;
+    font-size: 30px;
+    color: #FFF;
+    background-color: #00ff00;
+    border: none;
+}
+
+.nosotros {
+    background-color: #191a1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-nosotros {
+    width: 500px;
+}
+
+.nosotros h2 {
+    color: #00ff00;
+    margin: 0;
+}
+
+.nosotros p {
+    color: #fff;
+}
+
+.nosotros input {
+    background-color: #FFF;
+    color: #00ff00;
+    padding: 16px 45px;
+}
