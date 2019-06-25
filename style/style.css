@@ -237,6 +237,23 @@ body {
     background-attachment: fixed;
     background-position: 50% 50%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-zara-image {
+    display: inline-block;
+}
+
+.testimonio-zara-image {
+    background: url(../NBC/NBC_separado/persona_testimonio1.png);
+    width: 500px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
 }
 
 #testimonio-zara figure img {
