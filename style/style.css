@@ -1,89 +1,74 @@
 
-@font-face {
-    font-family: verlag;
-    src: url('NBC/Fonts/BourbonGrotesque-Regular+(1).otf');
-    src: url('NBC/Fonts/DIN-Regular.otf');
-    src: url('NBC/Fonts/Gotham Rounded Book.otf');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: verlag;
-}
-
-figure {
-    margin: 0;
-    height: 145px ;
-    padding-left: 200px;
-    padding-top: 89px;
-}
-
-.inscripcion {
-    background-image: url("../NBC/NBC_separado/foto\ home1_Mesa\ de\ trabajo\ 1.png");
-    background-repeat: no-repeat;
+    background-image: url('../NBC/NBC_separado/foto\ home1_Mesa\ de\ trabajo\ 1.png');
     background-size: cover;
-    height: 939px;
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Varela Round', sans-serif;
 }
 
-.header {
+/* INICIO HEADER */
+
+#header figure {
+    margin-top: 80px;
+    margin-left: 180px;
+}
+
+.logo img {
+    margin: auto;
+    width: 127px;
+    height: 145px;
+}
+
+#header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.header ul {
-    display: flex;
-    height: inherit;
-}
-
-.container {
-    width: 10000px;
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit;
-    align-content: inherit;
-    height: inherit;
-    flex-wrap: inherit;
-}
-
 .menu {
-    height: inherit;
-    padding-top: 148px;
-    padding-right: 198px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 180px; 
 }
 
-ul {
+.menu ol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 0 20px;
+}
+
+.menu li {
     list-style: none;
 }
 
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    padding-right: 20px;
-}
-
-.header a{
-    display: flex;
-    align-items: center;
-    height: inherit;
-    padding: 0 10px;
-}
-
-a{
-    padding: 0 10px;
-    color: #FFF;
+.menu a{
+    color: #fff;
     text-decoration: none;
 }
 
-.button-inscribete{
+/* FIN HEADER */
+
+.inscribete {
     display: flex;
+    margin: auto;
     justify-content: center;
-    align-content: center;
+    margin-top: 400px;
+    margin-bottom: 220px;
 }
 
-.button-inscribete input{
+.inscribete input {
     padding: 16px 45px;
     font-size: 30px;
     color: #FFF;
@@ -91,28 +76,293 @@ a{
     border: none;
 }
 
+/* INICIO NOSOTROS */
+
 .nosotros {
     background-color: #191a1e;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
     display: flex;
-    justify-content: space-between;
+    margin: auto;
     align-items: center;
+    justify-content: center;
 }
 
 .text-nosotros {
-    width: 500px;
+    max-width: 600px;
+    margin-right: 30px;
+    text-align: center;
 }
 
-.nosotros h2 {
+.text-nosotros h2 {
+    font-size: 40px;
     color: #00ff00;
-    margin: 0;
+    text-align: center;
+    margin: 30px;
 }
 
-.nosotros p {
+.text-nosotros p {
+    font-size: 15px;
+    color: #fff;
+    text-align: justify;
+    max-width: 400px;
+}
+
+.text-nosotros input {
+    background-color: #FFF;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #00ff00;
+    margin-top: 2em; 
+}
+
+/* INICIO EDICIONES */
+
+#ediciones-nbc {
+    background-image: url(../NBC/NBC_separado/fondo_pesas_home_Mesa\ de\ trabajo\ 1.png);
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0;
+    text-align: center;
+}
+
+.text-ediciones {
+    text-align: center;
+    margin: 10% 0;
+    display: inline-block;
+}
+
+.text-ediciones h2 {
+    font-size: 60px;
+    margin: 0;
+    color: #00ff00;
+}
+
+.text-ediciones p {
+    color: #FFF;
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.ediciones-img-1 {
+    background-image: url(../NBC/NBC_separado/2018.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 220px;
+    width: 380px;
+}
+
+.ediciones-img-2 {
+    background-image: url(../NBC/NBC_separado/2017.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 220px;
+    width: 380px;
+}
+
+.ediciones-img-3 {
+    background-image: url(../NBC/Links/2015.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 220px;
+    width: 380px;
+}
+
+.ediciones-img-1 p,
+.ediciones-img-2 p,
+.ediciones-img-3 p {
+    text-align: center;
+    padding-top: 150px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.image-ediciones {
+    display: flex;
+}
+
+.image-ediciones div {
+    margin-left: 10px;
+}
+
+/* INICIO SPONSORS */
+
+#sponsors {
+    background-color: #191a1e;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-sponsors {
+    display: inline-block;
+    text-align: center;
+}
+
+.text-sponsors h2 {
+    margin-top: 110px;
+    margin-bottom: 40px;
+    color: #00ff00;
+    font-size: 3.5em;
+}
+
+.text-sponsors p {
+    margin-top: 20px; 
+    color: #FFF;
+    max-width: 900px;
+    margin: auto;
+}
+
+.icon-sponsors img{
+    width: 100em;
+    height: 45em;
+}
+
+/* INICIO TESTIMONIO ZARA */
+
+#testimonio-zara {
+    background-image: url(../NBC/NBC_separado/testimonio_1.png);
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    text-align: center;
+}
+
+#testimonio-zara figure img {
+    max-width: 700px;
+    max-height: 600px;
+}
+
+.text-testimonio h3 {
+    color: #00ff00;
+}
+
+.text-testimonio p {
+    color: #fff;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* INICIO CONTACT */
+
+#contac {
+    background-color: #191a1e;
+    min-height: 500px;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-contac {
+    display: block;
+    text-align: center;
+}
+
+.container-contac h3 {
+    color: #FFF;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+.container-contac p {
+    color: #FFF;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.container-contac form {
+    margin-top: 30px;
+    max-width: 700px;
+}
+
+.container-contac input {
+    background: none;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    font-size: 18px;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+.container-contac .name {
+    width: 45%;
+    margin-right: 20px;
+}
+
+.container-contac .phone {
+    width: 50%;
+}
+
+.container-contac .email {
+    width: 100%;
+}
+
+.container-contac .mensaje {
+    width: 100%;
+}
+
+.container-contac .boton {
+    border: 1px solid #fff;
+    padding: 2px;
+    background-color: #fff;
+    color: #000;
+    display: block;
+    font-size: 15px;
+    margin-top: 50px;
+}
+/* INICIO FOOTER */
+
+#footer {
+    background-color: #333333;
+    min-height: 200px;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-icon {
+    display: flex;
+}
+
+#footer .instagram, #footer .youtube {
+    display: block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+#footer p {
+    margin: 15px 10px;
+}
+
+#footer a {
+    text-decoration: none;
     color: #fff;
 }
 
-.nosotros input {
-    background-color: #FFF;
-    color: #00ff00;
-    padding: 16px 45px;
+#footer img {
+    width: 50px;
+    height: 50px;
+}
+
+#footer .copyright {
+    display: block;
+    font-size: 8px;
+    text-align: center;
+    color: #fff;
 }
